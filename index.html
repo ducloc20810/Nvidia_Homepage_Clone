@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Pc version -->
+      <div class="header__pc container">
+        <div class="header__left">
+          <div class="header__logo">
+            <a href="#">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#">Product</a>
+            </li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Industries</a></li>
+            <li><a href="#">For You</a></li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <ul class="header__right-text">
+            <li>
+              <a href="#">SHOP</a>
+            </li>
+
+            <li><a href="#">DRIVERS</a></li>
+            <li><a href="#">SUPPORT</a></li>
+          </ul>
+
+          <ul class="header__icon">
+            <li>
+              <a href="#" class="search">
+                <i class="fa-solid fa-magnifying-glass search-btn"> </i>
+                <i class="fa-solid fa-x close-search-btn hide"></i>
+                <div class="search__input hide">
+                  <input type="text" />
+                  <i class="fa-solid fa-magnifying-glass"> </i>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <div class="header__quantity">2</div>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile version -->
+      <div class="header__mobile container">
+        <div class="header__left header__icon">
+          <div class="navbar">
+            <i class="fa-solid fa-bars" id="navbar-btn"></i>
+            <i class="fa-solid fa-x close-navbar-side hide"></i>
+
+            <ul class="navbar__side">
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Industries</a></li>
+              <li><a href="#">For You</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Drivers</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass search-btn"> </i>
+            <i class="fa-solid fa-x close-search-btn hide"></i>
+            <div class="search__input hide">
+              <input type="text" />
+              <i class="fa-solid fa-magnifying-glass"> </i>
+            </div>
+          </div>
+        </div>
+        <div class="header__mid">
+          <div class="header__logo">
+            <a href="#">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="header__right">
+          <ul class="header__icon">
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+
+            <li>
+              <div class="header__quantity">2</div>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <slider class="slider">
+      <!-- Slide 1 -->
+      <div class="slider__inner slider__inner--active">
+        <div class="slider__text container">
+          <h1>ANNOUNCING NVIDIA OMNIVERSE CLOUD</h1>
+          <p>
+            New suite of cloud services lets designers, creators on any device
+            “one-click to collaborate” in Omniverse.
+          </p>
+          <button class="btn btn--primary">LEARN MORE</button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slider__inner">
+        <div class="slider__text container">
+          <h1>ANNOUNCING THE NVIDIA HOPPER GPU ARCHITECTURE</h1>
+          <p>
+            Unprecedented performance, scalability, and security for every data
+            center.
+          </p>
+          <button class="btn btn--primary">LEARN MORE</button>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slider__inner">
+        <div class="slider__text container">
+          <h1>EXPERIENCE NVIDIA SOLUTIONS INSTANTLY—FROM ANYWHERE</h1>
+          <p>
+            From 3D design collaboration with NVIDIA Omniverse Enterprise to
+            early access to VMware's Project Monterey, fast-track your
+            enterprise projects with free curated labs.
+          </p>
+          <button class="btn btn--primary">LEARN MORE</button>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slider__inner">
+        <div class="slider__text container">
+          <h1>ANNOUNCING NVIDIA OMNIVERSE CLOUD</h1>
+          <p>
+            Powering 2X the performance and energy efficiency of server chips.
+          </p>
+          <button class="btn btn--primary">LEARN MORE</button>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slider__inner">
+        <div class="slider__text container">
+          <h1>GET STARTED WITH SPEECH AI</h1>
+          <p>Try NVIDIA Riva for free on NVIDIA LaunchPad.</p>
+          <button class="btn btn--primary">GET STARTED</button>
+        </div>
+      </div>
+
+      <ul class="slider__paginate">
+        <li class="active-page"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </slider>
+
+    <main class="main">
+      <!-- Section 1 -->
+
+      <section class="section">
+        <h2>Shop</h2>
+
+        <div class="section__list-container">
+          <button class="btn btn-left hide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="btn btn-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <ul>
+            <!-- Card 1 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 2 -->
+
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 4 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section">
+        <h2>GAMING</h2>
+
+        <div class="section__list-container">
+          <button class="btn btn-left hide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="btn btn-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <ul>
+            <!-- Card 1 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 2 -->
+
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 4 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section">
+        <h2>LATEST NEWS</h2>
+
+        <div class="section__list-container">
+          <button class="btn btn-left hide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="btn btn-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <ul>
+            <!-- Card 1 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 2 -->
+
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 4 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+
+      <section class="section">
+        <div class="section__list-container">
+          <button class="btn btn-left hide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="btn btn-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <ul>
+            <!-- Card 1 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 2 -->
+
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 4 -->
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  <h3>GeForce RTX 30 Series Laptops</h3>
+                  <p>
+                    Powering the world’s fastest laptops for gamers and
+                    creators. With new AI-powered Max-Q technologies that
+                    optimize laptops to deliver high performance in thin form
+                    factors.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__above container">
+        <div class="footer__above-grid">
+          <!-- Item 1 -->
+          <div class="footer__above-grid-item">
+            <h3>Corporate Information</h3>
+            <ul>
+              <li>
+                <a href="#">About NVIDIA</a>
+              </li>
+              <li><a href="#">Corporate Overview</a></li>
+
+              <li><a href="#">Technologies</a></li>
+              <li><a href="#">NVIDIA Research</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Social Responsibility</a></li>
+              <li><a href="#">NVIDIA Foundation</a></li>
+            </ul>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="footer__above-grid-item">
+            <h3>Get Involved</h3>
+            <ul>
+              <li>
+                <a href="#">Forums</a>
+              </li>
+
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Developer Home</a></li>
+              <li><a href="#">Join the Developer Program</a></li>
+              <li><a href="#">NVIDIA Partner Network</a></li>
+              <li><a href="#">NVIDIA Inception</a></li>
+              <li><a href="#">Resources for Venture Capitalists</a></li>
+              <li><a href="#">Technical Training</a></li>
+              <li><a href="#">Training for IT Professionals</a></li>
+              <li><a href="#">Professional Services for Data Science</a></li>
+            </ul>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="footer__above-grid-item">
+            <h3>News & Events</h3>
+            <ul>
+              <li>
+                <a href="#">Newsroom</a>
+              </li>
+
+              <li><a href="#">NVIDIA Blog</a></li>
+              <li><a href="#">Webinars</a></li>
+              <li><a href="#">Stay Informed</a></li>
+              <li><a href="#">Events Calendar</a></li>
+              <li><a href="#">NVIDIA GTC</a></li>
+              <li><a href="#">NVIDIA On-Demand</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__above-bottom">
+          <div class="footer__above-bottom-left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="48"
+              height="36"
+              viewBox="0 0 48 36"
+            >
+              <image
+                id="icon_mail_copy"
+                data-name="icon mail copy"
+                width="48"
+                height="36"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAkCAMAAAD4m0k4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABnlBMVEWHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgAAAADqIFB3AAAAiHRSTlMAPqKqqKucL9zD8v383e77xqnO2fBFYfRSbfUDDgIPDF6QUA0SWJMIQI4qAQQznT8XHW7k6DEKadYFCUq3z1kGMqPt6XokK4fz55glwVQLX828VR6L4PeUNT2h/td9FUmv+tIWdtukcdCsTmU0md9/iY8HWr60TYLl2kOt+DoaE0djybDCPJ8umjQepgAAAAFiS0dEiRxhJswAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfgChgTJSW4Gs96AAABYklEQVQ4y2NgZGJmIRqwsrEzcHSQBDgZuDo6uHmIBNwdHbwMfB38AoKsRAEWIZ4OYaAGEVEGIoGYOFgDlwSxGiSlKNAgLYNXqaycLKoGeQVFJWXc6lVU1STUUTRodHTwaGppY1euo6vX0SGii6JBXwQYKcJiBtjUGxoZAyVNTFE0mJlbgOJRUN8SXbmVtQ1IxtbOHi2UHBydgOLOLq6o6t3cPYDCnl7eWIJVTABklI+vH5Jn/QOAQvyBQdjjITgkFCgdFh4BUx8ZFQ0UiImNwxlx8QmJQBVJ5slg/SmpQI5UWiS+mFZJzwC5KxOYvLLAnhXItiKQNHJyQb7Myy9wBoVBoRbhtFRUXALLLaVlqFGJK/F5l1eAlFemBONJfKigqpq/hqkWQxhP8q5T9a1nIEUDdjCqYVBpEGkgVkMjRAN/E2szUYA5A1QYg4t7bqIATzSouE8lrUJpYWhtI6XKym0HAEPUyge2kF93AAAAAElFTkSuQmCC"
+              ></image>
+            </svg>
+
+            <p>SIGN UP FOR NVIDIA NEWS</p>
+            <button class="btn">SUBCRIBE</button>
+          </div>
+
+          <div class="footer__above-bottom-right">
+            <p>Follow NVIDIA</p>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer__below">
+        <div class="container">
+          <div class="footer__below-top">
+            <svg
+              class="global-footer__logo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 407.8 1000 184.4"
+              enable-background="new 0 407.8 1000 184.4"
+              xml:space="preserve"
+            >
+              <title>NVIDIA</title>
+              <g id="nvidia-logo">
+                <path
+                  d="M987.1 555.7v-2.8h1.7c0.9 0 2.3 0.1 2.3 1.2 0 1.2-0.7 1.5-1.8 1.5H987.1M987.1 557.6h1.2l2.8 4.8h3l-3.1-5c1.5-0.1 2.9-0.8 2.9-3 0-2.7-1.8-3.5-4.9-3.5h-4.4v11.5h2.6L987.1 557.6M1000 556.7c0-6.8-5.2-10.7-11.1-10.7 -5.8 0-11.1 3.9-11.1 10.7 0 6.8 5.2 10.7 11.1 10.7S1000 563.5 1000 556.7M996.8 556.7c0 4.9-3.6 8.2-7.9 8.2l0 0c-4.4 0-7.9-3.3-7.9-8.2 0-4.9 3.6-8.2 7.9-8.2C993.2 548.6 996.8 551.9 996.8 556.7z"
+                ></path>
+                <path
+                  d="M593.2 442.7v121.1h34.2V442.7H593.2zM324.4 442.5v121.2h34.5v-94.1l26.9 0.1c8.8 0 15 2.2 19.2 6.7 5.4 5.7 7.6 15.1 7.6 32v55.3H446v-66.9c0-47.8-30.5-54.3-60.2-54.3C385.8 442.5 324.4 442.5 324.4 442.5zM648.3 442.7v121.1h55.4c29.5 0 39.2-4.9 49.6-15.9 7.4-7.7 12.1-24.7 12.1-43.3 0-17-4-32.2-11.1-41.7 -12.5-16.9-30.8-20.2-58.1-20.2H648.3zM682.2 469h14.7c21.3 0 35.1 9.5 35.1 34.4 0 24.8-13.7 34.4-35.1 34.4h-14.7V469zM544 442.7l-28.5 95.9 -27.3-95.9h-36.9l39 121.1h49.2l39.3-121.1H544zM781.4 563.7h34.2v-121h-34.2V563.7zM877.2 442.7l-47.7 121h33.7l7.6-21.3h56.5l7.2 21.3h36.6l-48.2-121H877.2zM899.4 464.8l20.7 56.6H878L899.4 464.8z"
+                ></path>
+                <path
+                  d="M103.9 462.8v-16.6c1.6-0.1 3.3-0.2 4.9-0.2 45.6-1.4 75.4 39.1 75.4 39.1s-32.2 44.8-66.8 44.8c-5 0-9.4-0.8-13.4-2.2v-50.5c17.7 2.2 21.3 10 32 27.7l23.7-20c0 0-17.3-22.7-46.5-22.7C110 462.3 106.9 462.5 103.9 462.8M103.9 407.8v24.8c1.6-0.1 3.3-0.2 4.9-0.3 63.3-2.2 104.6 51.9 104.6 51.9s-47.4 57.7-96.7 57.7c-4.5 0-8.7-0.4-12.7-1.1v15.4c3.4 0.4 7 0.7 10.6 0.7 46 0 79.2-23.5 111.4-51.2 5.3 4.3 27.2 14.7 31.7 19.2 -30.6 25.6-101.9 46.3-142.3 46.3 -3.9 0-7.6-0.2-11.3-0.6v21.6h174.7V407.8H103.9zM103.9 527.8v13.1c-42.5-7.6-54.3-51.8-54.3-51.8s20.4-22.6 54.3-26.3v14.4c0 0 0 0-0.1 0 -17.7-2.2-31.7 14.5-31.7 14.5S80 519.6 103.9 527.8M28.4 487.2c0 0 25.2-37.1 75.5-41v-13.5C48.2 437.2 0 484.4 0 484.4s27.3 79 103.9 86.3v-14.4C47.7 549.2 28.4 487.2 28.4 487.2z"
+                ></path>
+              </g>
+            </svg>
+
+            <a href="#">USA - United States</a>
+          </div>
+          <div class="footer__below-bottom">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Manage My Privacy</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#"> Product Security</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <p>Copyright © 2022 NVIDIA Corporation</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="layout hide"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
